@@ -1,0 +1,26 @@
+@import './variables';
+
+@mixin content-right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+@mixin font-color{
+    color: $secondary-color
+}
+
+@mixin content-left(){
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+@mixin total-width{
+    width: 100%;
+}
+
+@mixin bold-font{
+    font-family: $font-sans-bold;
+    font-weight: $font-bold-weight;
+}
