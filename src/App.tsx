@@ -1,13 +1,12 @@
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainTitle from "./components/MainTitle";
 import SectionItems from "./components/SectionItems";
+// import Test from "./components/Test";
 
 function App() {
   return (
     <>
-      {/* <Contact></Contact> */}
       <header>
         <Header></Header>
       </header>
