@@ -12000,4 +12000,59 @@ body {
   justify-content: end;
   align-items: center;
   width: 100%;
+}
+
+.title-mug {
+  height: 56vh;
+  width: auto;
+  z-index: 2;
+  align-self: flex-end;
+  margin-top: -70vh;
+}
+
+.title-words {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #212222;
+  font-size: 15em;
+}
+
+.first-line-title {
+  z-index: 1;
+  text-align: left;
+  border-bottom: 0.1vh solid #212222;
+  padding-left: 5vw;
+}
+
+.second-line-title {
+  z-index: 3;
+  text-align: right;
+  padding-right: 10vw;
+}
+
+.third-line-title {
+  text-align: left;
+  z-index: 1;
+  border-top: 0.1vh solid #212222;
+  padding-left: 6vw;
+}
+
+.title_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-aside {
+  margin-top: 60vh;
+}
+.contact-aside p {
+  transform: rotate(90deg);
+}
+
+.contact-line {
+  background-color: #FB088C;
+  height: 0.1vh;
+  width: 2vw;
+  content: "";
+  margin-bottom: 3vh;
 }/*# sourceMappingURL=style.css.map */
