@@ -1,2 +1,23 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss'
+@import './variables';
+@import './mixins';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+body{
+  font-family: $font-family-base
+}
+
+.logo{
+    @include content-left;
+    margin-top: 4vh;
+}
+
+.navRow{
+    @include total-width;
+}
+.navbarMenu{
+    @include content-right;
+    width: 100%;
+  }
+  
+
 

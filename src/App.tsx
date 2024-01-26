@@ -7,7 +7,7 @@ import SectionItems from "./components/SectionItems";
 function App() {
   return (
     <>
-      <Contact></Contact>
+      {/* <Contact></Contact> */}
       <header>
         <Header></Header>
       </header>
