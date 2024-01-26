@@ -12003,11 +12003,11 @@ body {
 }
 
 .title-mug {
-  height: 60vh;
+  height: 56vh;
   width: auto;
   z-index: 2;
   align-self: flex-end;
-  margin-top: -75vh;
+  margin-top: -70vh;
 }
 
 .title-words {
@@ -12021,7 +12021,7 @@ body {
   z-index: 1;
   text-align: left;
   border-bottom: 0.1vh solid #212222;
-  padding-left: 7vw;
+  padding-left: 5vw;
 }
 
 .second-line-title {
@@ -12034,7 +12034,7 @@ body {
   text-align: left;
   z-index: 1;
   border-top: 0.1vh solid #212222;
-  padding-left: 7vw;
+  padding-left: 6vw;
 }
 
 .title_container {
@@ -12043,5 +12043,16 @@ body {
 }
 
 .contact-aside {
-  writing-mode: vertical-lr;
+  margin-top: 60vh;
+}
+.contact-aside p {
+  transform: rotate(90deg);
+}
+
+.contact-line {
+  background-color: #FB088C;
+  height: 0.1vh;
+  width: 2vw;
+  content: "";
+  margin-bottom: 3vh;
 }/*# sourceMappingURL=style.css.map */
