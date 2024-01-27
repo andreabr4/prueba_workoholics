@@ -1,11 +1,11 @@
 export default function SectionHeader() {
   return (
     <>
-      <header className="container-fluid section-about-container">
+      <header>
         <div className="row-12">
           <div className="col-md-6 offset-md-5">
             <p className="about-paragraph">
-            <span className="about-circle"></span>
+              <span className="about-circle"></span>
               {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam "
               }
@@ -14,7 +14,7 @@ export default function SectionHeader() {
                 " ultrices pharetra. Praesent tempor mollis purus nec fringilla. "
               }
             </p>
-            </div>
+          </div>
         </div>
       </header>
     </>

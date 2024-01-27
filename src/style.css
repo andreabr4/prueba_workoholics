@@ -12058,7 +12058,7 @@ body {
 }
 
 .section-about-container {
-  margin-top: 20vh;
+  margin-top: 25vh;
 }
 
 .about-circle {
@@ -12072,4 +12072,77 @@ body {
 
 .about-paragraph {
   font-size: 1.7em;
+}
+
+.tshirt-information {
+  margin-top: -53vh;
+}
+
+.tshirt-title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 6.5em;
+}
+
+.tshirt-description {
+  font-size: 1.3em;
+}
+
+.tshirt-options {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1vh solid #212222;
+  height: 6vh;
+  margin-top: 5vh;
+  position: relative;
+  z-index: 1;
+}
+
+.secondary-color-rectangle {
+  width: 4vw;
+  height: 1.5vh;
+  margin-right: 1vw;
+  background-color: #212222;
+}
+
+.primary-color-rectangle {
+  width: 4vw;
+  height: 1.5vh;
+  background-color: #FB088C;
+}
+
+.buy-button {
+  display: flex;
+  align-items: center;
+  margin-top: 5vh;
+  margin-left: 40vw;
+  background: none;
+  border: none;
+}
+.buy-button p {
+  margin-right: 1rem;
+}
+.buy-button svg {
+  height: 1em;
+  width: auto;
+  margin-top: -1.5vh;
+}
+
+.tshirt-image {
+  position: relative;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.tshirt-image img {
+  height: 68vh;
+  width: auto;
+  margin-left: 12vw;
+  transform: scaleX(-1);
+  transform: matrix(-0.99, -0.15, -0.15, 0.99, 0, 0);
+  z-index: -2;
+}
+
+.black-stroke {
+  stroke: #212222;
 }/*# sourceMappingURL=style.css.map */
