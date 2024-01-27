@@ -7,7 +7,7 @@ export default function Header() {
       <header className="container-fluid logo">
         <div className="row navRow">
           <div className="col-2">
-            <img className="img-fluid" src={logo} alt="logo-worköholics" />
+            <img className="img-fluid ms-5" src={logo} alt="logo-worköholics" />
           </div>
           <NavbarMenu />
         </div>

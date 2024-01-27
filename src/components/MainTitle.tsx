@@ -3,7 +3,7 @@ import Contact from "./Contact";
 export default function MainTitle() {
   return (
     <>
-      <header className="container-fluid mb-5 mt-5">
+      <header className="container-fluid mb-5 mt-5 ps-5">
         <div className="row">
         <div className="col-11">
         <h1 className="title-words title_container">
@@ -12,7 +12,7 @@ export default function MainTitle() {
           <span className="second-line-title">IPSUM</span>
 
           <span className="third-line-title">DOLOR</span>
-          <img className="title-mug" src={mug}></img>
+          <img className="title-mug ps-4" src={mug}></img>
         </h1>
         </div>
         <div className="col-1">
