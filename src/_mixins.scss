@@ -1,9 +1,9 @@
 @import './variables';
 
 @mixin content-right{
-    display: flex;
     justify-content: end;
     align-items: center;
+    display: flex;
 }
 
 @mixin font-color{
