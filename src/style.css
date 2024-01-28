@@ -12145,4 +12145,12 @@ body {
 
 .black-stroke {
   stroke: #212222;
+}
+
+.footer-container {
+  background-color: #212222;
+}
+
+.contact-information {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

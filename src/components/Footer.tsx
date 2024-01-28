@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
     <>
-      <div>
+      <div className="container-fluid footer-container">
         {/* LEFT:COL1 */}
-        <div>
+        <div className="col-3 contact-information">
           <p>hello@workoholics.es</p>
           <p>+34 944 059 957</p>
         </div>
