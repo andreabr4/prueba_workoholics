@@ -1,11 +1,15 @@
 export default function Footer() {
   return (
     <>
-      <div className="container-fluid footer-container p-5" >
+      <div className="container-fluid footer-container p-5" id="page-footer" >
         <div className="row mt-4">
           <div className="col-5 contact-information">
-            <p>hello@workoholics.es</p>
-            <p>+34 944 059 957</p>
+            <div className="row">
+            <a href="mailto:hello@workoholics.es">hello@workoholics.es</a>
+            </div>
+            <div className="row">
+            <a href="tel:+34 944 059 957">+34 944 059 957</a>
+            </div>
           </div>
 
           <div className="col-7">
@@ -33,7 +37,8 @@ export default function Footer() {
                     id="privacy"
                   />
                   <label className="form-check-label ms-3" htmlFor="privacy">
-                    I have read and accepted the Terms and Conditions.
+                    {"I have read and accepted the "}
+                    <a href="" className="privacy-link">Terms and Conditions.</a>
                   </label>
                   </div>
                   <div className="col-auto ms-5">
@@ -46,12 +51,12 @@ export default function Footer() {
                   >
                     <path
                       d="M1 0v15.5h29.808"
-                      className="black-stroke"
+                      className="white-stroke"
                       stroke-width="2"
                     ></path>
                     <path
                       d="M23.654 7.154L32 15.5l-8.346 8.346"
-                      className="black-stroke"
+                      className="white-stroke"
                       stroke-width="2"
                     ></path>
                   </svg>
