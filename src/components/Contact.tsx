@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 export default function Contact() {
-    const [isVisible, setIsVisible] = useState(true);
-  
+  const [isVisible, setIsVisible] = useState(true);
+
   useEffect(() => {   
     window.addEventListener("scroll", listenToScroll);
     return () => 
