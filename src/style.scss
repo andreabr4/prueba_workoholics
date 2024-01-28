@@ -39,9 +39,9 @@ body {
 }
 
 .first-line-title {
+  @include border-bottom;
   z-index: 1;
   text-align: left;
-  border-bottom: 0.1vh solid $secondary-color;
   padding-left: 5vw;
 }
 
@@ -117,9 +117,9 @@ margin-top: -53vh;
 }
 
 .tshirt-options {
+  @include border-bottom;
   display: flex;
   align-items: center;
-  border-bottom: 0.1vh solid $secondary-color;
   height: 6vh;
   margin-top: 5vh;
   position: relative; 
@@ -180,8 +180,64 @@ margin-top: -53vh;
 
 .footer-container{
   background-color: $secondary-color;
+  z-index: 10;
 }
 
 .contact-information{
-  color: white;
+  @include font-white;
+}
+
+.footer-slogan{
+  @include bold-font;
+  @include font-white;
+  line-height: 0.6em;
+  font-size: 1.5em;
+  margin-bottom: 7vh;
+}
+
+.footer-form{
+  @include font-white;
+  border-bottom:  0.1vh solid #FFF;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+
+  &::placeholder { 
+    @include font-white; 
+  }
+}
+
+.form-check-privacy{
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none; 
+  width: 15px; 
+  height: 15px; 
+  background: transparent; 
+  border: 2px solid #cccccc;
+  transition: background-color 0.2s, border-color 0.2s; 
+}
+
+.form-check-label{
+  @include font-white; 
+}
+
+.form-check-privacy:checked{
+  background-color: $primary-color;
+ 
+}
+
+.footer-submit-btn{
+  @include font-white;
+  background: none;
+  border: none; 
+
+  svg{
+    height: 1em;
+    width: auto;
+    margin-left: 1vw;
+    margin-top: 0.5vh;
+  }
 }

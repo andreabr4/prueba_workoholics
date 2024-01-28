@@ -12019,9 +12019,9 @@ body {
 }
 
 .first-line-title {
+  border-bottom: 0.1vh solid #212222;
   z-index: 1;
   text-align: left;
-  border-bottom: 0.1vh solid #212222;
   padding-left: 5vw;
 }
 
@@ -12100,9 +12100,9 @@ body {
 }
 
 .tshirt-options {
+  border-bottom: 0.1vh solid #212222;
   display: flex;
   align-items: center;
-  border-bottom: 0.1vh solid #212222;
   height: 6vh;
   margin-top: 5vh;
   position: relative;
@@ -12160,8 +12160,65 @@ body {
 
 .footer-container {
   background-color: #212222;
+  z-index: 10;
 }
 
 .contact-information {
-  color: white;
+  color: #FFF;
+}
+
+.footer-slogan {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #FFF;
+  line-height: 0.6em;
+  font-size: 1.5em;
+  margin-bottom: 7vh;
+}
+
+.footer-form {
+  color: #FFF;
+  border-bottom: 0.1vh solid #FFF;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+.footer-form::-moz-placeholder {
+  color: #FFF;
+}
+.footer-form::placeholder {
+  color: #FFF;
+}
+
+.form-check-privacy {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 2px solid #cccccc;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.form-check-label {
+  color: #FFF;
+}
+
+.form-check-privacy:checked {
+  background-color: #FB088C;
+}
+
+.footer-submit-btn {
+  color: #FFF;
+  background: none;
+  border: none;
+}
+.footer-submit-btn svg {
+  height: 1em;
+  width: auto;
+  margin-left: 1vw;
+  margin-top: 0.5vh;
 }/*# sourceMappingURL=style.css.map */

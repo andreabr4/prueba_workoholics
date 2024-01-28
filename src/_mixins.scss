@@ -29,3 +29,11 @@
     max-width: 100vw;
     overflow: hidden;
 }
+
+@mixin border-bottom{
+    border-bottom: 0.1vh solid $secondary-color;
+}
+
+@mixin font-white{
+    color: #FFF;
+}
