@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="container-fluid footer-container p-5" >
+      <div className="container-fluid footer-container p-5" id="page-footer" >
         <div className="row mt-4">
           <div className="col-5 contact-information">
             <div className="row">
