@@ -1,39 +1,43 @@
-@import './variables';
+@import "./variables";
 
-@mixin content-right{
-    justify-content: end;
-    align-items: center;
-    display: flex;
+@mixin content-right {
+  justify-content: end;
+  align-items: center;
+  display: flex;
 }
 
-@mixin font-color{
-    color: $secondary-color
+@mixin font-color {
+  color: $secondary-color;
 }
 
-@mixin content-left(){
-    display: flex;
-    justify-content: start;
-    align-items: center;
+@mixin content-left() {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
-@mixin total-width{
-    width: 100%;
+@mixin total-width {
+  width: 100%;
 }
 
-@mixin bold-font{
-    font-family: $font-sans-bold;
-    font-weight: $font-bold-weight;
+@mixin bold-font {
+  font-family: $font-sans-bold;
+  font-weight: $font-bold-weight;
 }
 
-@mixin no-horizontal-overflow{
-    max-width: 100vw;
-    overflow: hidden;
+@mixin no-horizontal-overflow {
+  max-width: 100vw;
+  overflow: hidden;
 }
 
-@mixin border-bottom{
-    border-bottom: 0.1vh solid $secondary-color;
+@mixin border-bottom {
+  border-bottom: 0.1vh solid $secondary-color;
 }
 
-@mixin font-white{
-    color: #FFF;
+@mixin font-white {
+  color: #fff;
+}
+
+@mixin color-inherit {
+  color: inherit;
 }
