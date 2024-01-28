@@ -24,3 +24,8 @@
     font-family: $font-sans-bold;
     font-weight: $font-bold-weight;
 }
+
+@mixin no-horizontal-overflow{
+    max-width: 100vw;
+    overflow: hidden;
+}
