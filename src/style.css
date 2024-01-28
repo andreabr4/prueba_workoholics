@@ -12107,27 +12107,23 @@ body {
 }
 
 .tshirt-information {
-  margin-top: -53vh;
+  position: absolute;
+  top: 10.7rem;
 }
 
 .tshirt-title {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 6.5rem;
+  font-size: 5.5rem;
 }
 
 .tshirt-description {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .tshirt-options {
   border-bottom: 0.1vh solid #212222;
-  display: flex;
-  align-items: center;
-  height: 6vh;
   margin-top: 5vh;
-  position: relative;
-  z-index: 1;
 }
 
 .secondary-color-rectangle {
@@ -12146,8 +12142,6 @@ body {
 .buy-button {
   display: flex;
   align-items: center;
-  margin-top: 5vh;
-  margin-left: 40vw;
   background: none;
   border: none;
 }
@@ -12157,22 +12151,19 @@ body {
 .buy-button svg {
   height: 1em;
   width: auto;
-  margin-top: -1.5vh;
+  margin-top: -1rem;
 }
 
-.tshirt-image {
+.tshirt-article {
   position: relative;
-  z-index: -1;
-  top: 0;
-  left: 0;
 }
+
 .tshirt-image img {
-  height: 68vh;
+  height: 37rem;
   width: auto;
-  margin-left: 12vw;
   transform: scaleX(-1);
   transform: matrix(-0.99, -0.15, -0.15, 0.99, 0, 0);
-  z-index: -2;
+  padding-right: -2rem;
 }
 
 .black-stroke {
