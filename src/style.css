@@ -3,6 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -12001,26 +12012,34 @@ body {
   display: flex;
   width: 100%;
 }
+.navbarMenu span {
+  transition: opacity 0.3s;
+}
+.navbarMenu span:hover {
+  opacity: 0.6;
+  color: #FB088C;
+}
 
 .title-mug {
-  height: auto;
-  width: 46vw;
+  position: absolute;
+  top: 4rem;
+  height: 42rem;
+  width: auto;
   z-index: 2;
   align-self: flex-end;
-  margin-top: -87vh;
 }
 
 .title-words {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   color: #212222;
-  font-size: 15em;
+  font-size: 15rem;
 }
 
 .first-line-title {
+  border-bottom: 0.1vh solid #212222;
   z-index: 1;
   text-align: left;
-  border-bottom: 0.1vh solid #212222;
   padding-left: 5vw;
 }
 
@@ -12039,14 +12058,24 @@ body {
 
 .title_container {
   display: flex;
+  position: relative;
   flex-direction: column;
+  width: 95vw;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .contact-aside {
-  margin-top: 60vh;
+  position: fixed;
+  right: 0;
+  bottom: 5vh;
+  z-index: 5;
 }
 .contact-aside p {
   transform: rotate(90deg);
+}
+.contact-aside:hover {
+  animation: shake 0.5s ease;
 }
 
 .contact-line {
@@ -12058,20 +12087,23 @@ body {
 }
 
 .section-about-container {
-  margin-top: 25vh;
+  max-width: 100vw;
+  overflow: hidden;
+  margin-top: 10vh;
+  width: 95vw;
 }
 
 .about-circle {
-  height: 1.5vh;
-  width: 1vw;
+  height: 1rem;
+  width: 1rem;
   border-radius: 50%;
-  margin-right: 1vw;
+  margin-right: 1.5rem;
   display: inline-block;
   background-color: #FB088C;
 }
 
 .about-paragraph {
-  font-size: 1.7em;
+  font-size: 1.7rem;
 }
 
 .tshirt-information {
@@ -12081,17 +12113,17 @@ body {
 .tshirt-title {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 6.5em;
+  font-size: 6.5rem;
 }
 
 .tshirt-description {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 .tshirt-options {
+  border-bottom: 0.1vh solid #212222;
   display: flex;
   align-items: center;
-  border-bottom: 0.1vh solid #212222;
   height: 6vh;
   margin-top: 5vh;
   position: relative;
@@ -12145,4 +12177,104 @@ body {
 
 .black-stroke {
   stroke: #212222;
+}
+
+.footer-container {
+  background-color: #212222;
+  z-index: 10;
+}
+
+.contact-information {
+  color: #fff;
+  font-size: 1.3rem;
+  padding-left: 3vw;
+}
+.contact-information a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-slogan {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3rem;
+  font-size: 1.5rem;
+  margin-bottom: 7vh;
+}
+
+.footer-form {
+  color: #fff;
+  border-bottom: 0.1vh solid #fff;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+.footer-form::-moz-placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+.footer-form::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+.footer-form:focus {
+  color: #fff;
+  border-bottom-color: #FB088C;
+  background: none;
+  box-shadow: none;
+}
+
+.form-check-privacy {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 2px solid #cccccc;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.form-check-label {
+  color: #fff;
+}
+
+.form-check-privacy:checked {
+  background-color: #FB088C;
+}
+
+.privacy-link {
+  color: inherit;
+}
+
+.form-check-label a:hover {
+  color: #FB088C;
+  text-decoration: none;
+}
+
+.footer-submit-btn {
+  color: #fff;
+  background: none;
+  border: none;
+  margin-left: 11vw;
+  transition: transform 0.3s;
+}
+.footer-submit-btn svg {
+  height: 1rem;
+  width: auto;
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+  transition: transform 0.3s;
+}
+
+.white-stroke {
+  stroke: #fff;
+  transition: transform 0.3s;
+}
+
+.footer-submit-btn:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=style.css.map */
