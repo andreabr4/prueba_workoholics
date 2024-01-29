@@ -1,9 +1,10 @@
 export default function Footer() {
   return (
     <>
-      <div className="container-fluid footer-container p-5" id="page-footer">
-        <div className="row mt-4">
-          <div className="col-md-7 order-md-2">
+      <div className="container-fluid footer-container p-5" style={{border: "2px white dotted"}} id="page-footer">
+        <div className="no-overflow">
+        <div className="row mt-4 footer-content" style={{border: "2px white dotted"}}>
+          <div className="col-md-7 order-sm-2">
             <div className="row-6 footer-slogan">
               <p>We love what we do.</p>
               <p>We are Worköholics.</p>
@@ -58,36 +59,22 @@ export default function Footer() {
                         </svg>
                       </button>
                     </div>
-
-                    <div className="col-md-5 order-md-1 mt-sm-5 contact-information">
-                      <div className="row">
-                        <a href="mailto:hello@workoholics.es">
-                          hello@workoholics.es
-                        </a>
-                      </div>
-                      <div className="row">
-                        <a href="tel:+34 944 059 957">+34 944 059 957</a>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </form>
           </div>
+          <div className="col-md-5 mt-sm-5 order-sm-1 contact-information">
+            <div className="row">
+              <a href="mailto:hello@workoholics.es">hello@workoholics.es</a>
+            </div>
+            <div className="row">
+              <a href="tel:+34 944 059 957">+34 944 059 957</a>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </>
   );
-}
-
-{
-  /* <label htmlFor="privacy">
-                  <input name="privacy" type="checkbox">
-                    <span className="marker"></span>
-                    <span>
-                      Al enviar este formulario aceptas expresamente
-                      nuestra&nbsp;<a href="/legal/">política de privacidad.</a>
-                    </span>
-                  </input>
-                </label> */
 }

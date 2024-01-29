@@ -24,7 +24,9 @@ export default function Contact() {
     };
     
     return (
+      
        <aside id="contact-aside" className="contact-aside d-none d-sm-block">
+        {/* <div className="no-overflow"> */}
         {isVisible 
         &&
         <>
@@ -34,6 +36,7 @@ export default function Contact() {
             <p>Contact us</p>
         </>
         }
+        {/* </div> */}
        </aside>
     );
 }
