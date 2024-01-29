@@ -113,26 +113,25 @@ body {
   font-size: 1.7rem;
 }
 
-.items-container{
+.items-container {
   margin-top: 15rem;
 }
 .tshirt-information {
-  position: absolute;
-  top: 10.7rem;
+  @include items-information;
 }
 
 .tshirt-title {
   @include bold-font;
-  font-size: 5.5rem;
+  @include items-title-size;
 }
 
 .tshirt-description {
-  font-size: 1.2rem;
+  @include items-description-size;
 }
 
 .tshirt-options {
   @include border-bottom;
-  margin-top: 5vh;
+  @include items-options-mt;
 }
 
 .secondary-color-rectangle {
@@ -166,19 +165,18 @@ body {
     margin-top: -1rem;
   }
 
-  &:hover{
+  &:hover {
     @include btn-transitions-hover;
   }
 }
 
 .tshirt-article {
-  position: relative;
+  @include articles;
 }
 
 .tshirt-image {
   img {
-    height: 37rem;
-    width: auto;
+    @include images-size;
     transform: scaleX(-1);
     transform: matrix(-0.99, -0.15, -0.15, 0.99, 0, 0);
     padding-right: -2rem;
@@ -189,36 +187,33 @@ body {
   stroke: $secondary-color;
 }
 
-
 .bottle-article {
-  position: relative;
+  @include articles;
 }
 
 .bottle-image {
   img {
-    height: 37rem;
-    width: auto;
+    @include images-size;
     padding-left: 15.7rem;
   }
 }
 
 .bottle-information {
-  position: absolute;
-  top:10.7rem;
+  @include items-information;
 }
 
 .bottle-title {
   @include bold-font;
-  font-size: 5.5rem;
+  @include items-title-size;
 }
 
 .bottle-description {
-  font-size: 1.2rem;
+  @include items-description-size;
 }
 
 .bottle-options {
   @include border-bottom;
-  margin-top: 5vh;
+  @include items-options-mt;
 }
 
 .footer-container {
@@ -277,14 +272,14 @@ body {
   border: 2px solid #cccccc;
   transition: background-color 0.2s, border-color 0.2s;
 
-  &:checked{
-    background-color: $primary-color; 
+  &:checked {
+    background-color: $primary-color;
   }
 }
 
 .form-check-label {
   @include font-white;
-  a:hover{
+  a:hover {
     color: $primary-color;
     text-decoration: none;
   }
@@ -318,4 +313,3 @@ body {
 .footer-submit-btn:hover {
   @include btn-transitions-hover;
 }
-
