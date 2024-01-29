@@ -11999,7 +11999,8 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-top: 4vh;
+  height: 1.1rem;
+  width: auto;
 }
 
 .navRow {
@@ -12012,10 +12013,10 @@ body {
   display: flex;
   width: 100%;
 }
-.navbarMenu span {
+.navbarMenu a {
   transition: opacity 0.3s;
 }
-.navbarMenu span:hover {
+.navbarMenu a:hover {
   opacity: 0.6;
   color: #FB088C;
 }
@@ -12305,4 +12306,13 @@ body {
 
 .footer-submit-btn:hover {
   transform: scale(1.05);
+}
+
+.navbar-collapse {
+  justify-content: end;
+  display: flex;
+}
+
+.navbar-container {
+  background-color: #FFF;
 }/*# sourceMappingURL=style.css.map */
