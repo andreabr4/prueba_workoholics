@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
     <>
-      <div className="container-fluid footer-container p-5" style={{border: "2px white dotted"}} id="page-footer">
+      <div className="container-fluid footer-container p-5" id="page-footer">
         <div className="no-overflow">
-        <div className="row mt-4 footer-content" style={{border: "2px white dotted"}}>
+        <div className="row mt-4 footer-content">
           <div className="col-md-7 order-sm-2">
             <div className="row-6 footer-slogan">
               <p>We love what we do.</p>
