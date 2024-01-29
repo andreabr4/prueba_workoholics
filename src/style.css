@@ -12106,6 +12106,10 @@ body {
   font-size: 1.7rem;
 }
 
+.items-container {
+  margin-top: 15rem;
+}
+
 .tshirt-information {
   position: absolute;
   top: 10.7rem;
@@ -12146,12 +12150,17 @@ body {
   border: none;
 }
 .buy-button p {
+  transition: transform 0.3s;
   margin-right: 1rem;
 }
 .buy-button svg {
+  transition: transform 0.3s;
   height: 1em;
   width: auto;
   margin-top: -1rem;
+}
+.buy-button:hover {
+  transform: scale(1.05);
 }
 
 .tshirt-article {
@@ -12170,13 +12179,43 @@ body {
   stroke: #212222;
 }
 
+.bottle-article {
+  position: relative;
+}
+
+.bottle-image img {
+  height: 37rem;
+  width: auto;
+  padding-left: 15.7rem;
+}
+
+.bottle-information {
+  position: absolute;
+  top: 10.7rem;
+}
+
+.bottle-title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 5.5rem;
+}
+
+.bottle-description {
+  font-size: 1.2rem;
+}
+
+.bottle-options {
+  border-bottom: 0.1vh solid #212222;
+  margin-top: 5vh;
+}
+
 .footer-container {
   background-color: #212222;
   z-index: 10;
 }
 
 .contact-information {
-  color: #fff;
+  color: #FFF;
   font-size: 1.3rem;
   padding-left: 3vw;
 }
@@ -12188,15 +12227,15 @@ body {
 .footer-slogan {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  color: #fff;
+  color: #FFF;
   line-height: 1.3rem;
   font-size: 1.5rem;
   margin-bottom: 7vh;
 }
 
 .footer-form {
-  color: #fff;
-  border-bottom: 0.1vh solid #fff;
+  color: #FFF;
+  border-bottom: 0.1vh solid #FFF;
   background: none;
   border-top: none;
   border-left: none;
@@ -12204,15 +12243,15 @@ body {
   border-radius: 0;
 }
 .footer-form::-moz-placeholder {
-  color: #fff;
+  color: #FFF;
   opacity: 0.5;
 }
 .footer-form::placeholder {
-  color: #fff;
+  color: #FFF;
   opacity: 0.5;
 }
 .footer-form:focus {
-  color: #fff;
+  color: #FFF;
   border-bottom-color: #FB088C;
   background: none;
   box-shadow: none;
@@ -12228,41 +12267,39 @@ body {
   border: 2px solid #cccccc;
   transition: background-color 0.2s, border-color 0.2s;
 }
-
-.form-check-label {
-  color: #fff;
-}
-
 .form-check-privacy:checked {
   background-color: #FB088C;
+}
+
+.form-check-label {
+  color: #FFF;
+}
+.form-check-label a:hover {
+  color: #FB088C;
+  text-decoration: none;
 }
 
 .privacy-link {
   color: inherit;
 }
 
-.form-check-label a:hover {
-  color: #FB088C;
-  text-decoration: none;
-}
-
 .footer-submit-btn {
-  color: #fff;
+  color: #FFF;
+  transition: transform 0.3s;
   background: none;
   border: none;
   margin-left: 11vw;
-  transition: transform 0.3s;
 }
 .footer-submit-btn svg {
+  transition: transform 0.3s;
   height: 1rem;
   width: auto;
   margin-left: 1vw;
   margin-top: 0.5vh;
-  transition: transform 0.3s;
 }
 
 .white-stroke {
-  stroke: #fff;
+  stroke: #FFF;
   transition: transform 0.3s;
 }
 

@@ -19,8 +19,8 @@ body {
 .navbarMenu {
   @include content-right;
   width: 100%;
-  
-  span{
+
+  span {
     transition: opacity 0.3s;
     &:hover {
       opacity: 0.6;
@@ -81,10 +81,9 @@ body {
     transform: rotate(90deg);
   }
 
-    &:hover {
-      animation: shake 0.5s ease;
-    }
-  
+  &:hover {
+    animation: shake 0.5s ease;
+  }
 }
 
 .contact-line {
@@ -114,10 +113,12 @@ body {
   font-size: 1.7rem;
 }
 
+.items-container{
+  margin-top: 15rem;
+}
 .tshirt-information {
   position: absolute;
-  top:10.7rem;
-
+  top: 10.7rem;
 }
 
 .tshirt-title {
@@ -154,32 +155,70 @@ body {
   border: none;
 
   p {
+    @include btn-transitions;
     margin-right: 1rem;
   }
 
   svg {
+    @include btn-transitions;
     height: 1em;
     width: auto;
     margin-top: -1rem;
   }
+
+  &:hover{
+    @include btn-transitions-hover;
+  }
 }
 
-.tshirt-article{
+.tshirt-article {
   position: relative;
 }
 
 .tshirt-image {
-  img { 
+  img {
     height: 37rem;
     width: auto;
     transform: scaleX(-1);
     transform: matrix(-0.99, -0.15, -0.15, 0.99, 0, 0);
-    padding-right:-2rem;    
+    padding-right: -2rem;
   }
 }
 
 .black-stroke {
   stroke: $secondary-color;
+}
+
+
+.bottle-article {
+  position: relative;
+}
+
+.bottle-image {
+  img {
+    height: 37rem;
+    width: auto;
+    padding-left: 15.7rem;
+  }
+}
+
+.bottle-information {
+  position: absolute;
+  top:10.7rem;
+}
+
+.bottle-title {
+  @include bold-font;
+  font-size: 5.5rem;
+}
+
+.bottle-description {
+  font-size: 1.2rem;
+}
+
+.bottle-options {
+  @include border-bottom;
+  margin-top: 5vh;
 }
 
 .footer-container {
@@ -208,7 +247,7 @@ body {
 
 .footer-form {
   @include font-white;
-  border-bottom: 0.1vh solid #fff;
+  border-bottom: 0.1vh solid $white-color;
   background: none;
   border-top: none;
   border-left: none;
@@ -237,47 +276,46 @@ body {
   background: transparent;
   border: 2px solid #cccccc;
   transition: background-color 0.2s, border-color 0.2s;
+
+  &:checked{
+    background-color: $primary-color; 
+  }
 }
 
 .form-check-label {
   @include font-white;
-}
-
-.form-check-privacy:checked {
-  background-color: $primary-color;
+  a:hover{
+    color: $primary-color;
+    text-decoration: none;
+  }
 }
 
 .privacy-link {
   @include color-inherit;
 }
 
-.form-check-label a:hover {
-  color: $primary-color;
-  text-decoration: none;
-}
-
 .footer-submit-btn {
   @include font-white;
+  @include btn-transitions;
   background: none;
   border: none;
   margin-left: 11vw;
-  transition: transform 0.3s;
-
 
   svg {
+    @include btn-transitions;
     height: 1rem;
     width: auto;
     margin-left: 1vw;
     margin-top: 0.5vh;
-    transition: transform 0.3s;
   }
 }
 
 .white-stroke {
-  stroke: #fff;
+  stroke: $white-color;
   transition: transform 0.3s;
 }
 
 .footer-submit-btn:hover {
-  transform: scale(1.05); 
+  @include btn-transitions-hover;
 }
+
