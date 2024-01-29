@@ -4,11 +4,12 @@ import Header from "./components/Header";
 import MainTitle from "./components/MainTitle";
 import SectionItems from "./components/SectionItems";
 
+
 function App() {
   return (
     <>
       <header>
-        <Header/>
+        <Header/> 
       </header>
       <Contact/>
       <main>
@@ -18,7 +19,7 @@ function App() {
       <footer>
         <Footer/>
       </footer>
-    </>
+      </>
   );
 }
 
