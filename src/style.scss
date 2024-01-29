@@ -13,7 +13,6 @@ body {
   width: auto;
 }
 
-
 .navRow {
   @include total-width;
 }
@@ -22,7 +21,7 @@ body {
   @include content-right;
   width: 100%;
 
-  a{
+  a {
     transition: opacity 0.3s;
     &:hover {
       opacity: 0.6;
@@ -38,12 +37,40 @@ body {
   width: auto;
   z-index: 2;
   align-self: flex-end;
+
+  @media (max-width: 1199.98px) {
+    // for large screens
+    height: 35rem;
+  }
+  @media (max-width: 991.98px) {
+    // for medium screens
+    height: 30rem;
+  }
+  @media (max-width: 767.98px) {
+    // for small screens
+    height: 25rem;
+  }
+  @media (max-width: 575.98px) {
+    // for extra small screens
+    height: 20rem;
+    top: 3rem;
+  }
 }
 
 .title-words {
   @include bold-font;
   @include font-color;
   font-size: 15rem;
+  @media (max-width: 991.98px) { // for medium screens
+    font-size: 14rem;
+  }
+  @media (max-width: 767.98px) { // for small screens
+    font-size: 9rem;
+  }
+  @media (max-width: 575.98px) { // for extra small screens
+    font-size: 4rem;
+    top: 3rem;
+  }
 }
 
 .first-line-title {
@@ -66,7 +93,7 @@ body {
   padding-left: 6vw;
 }
 
-.title_container {
+.title-container {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -296,7 +323,11 @@ body {
   @include btn-transitions;
   background: none;
   border: none;
-  margin-left: 11vw;
+
+  @media (max-width: 767.98px) {
+    margin-left: 11vw;
+  }
+
 
   svg {
     @include btn-transitions;
@@ -316,11 +347,11 @@ body {
   @include btn-transitions-hover;
 }
 
-.navbar-collapse{
+.navbar-collapse {
   justify-content: end;
   display: flex;
 }
 
-.navbar-container{
+.navbar-container {
   background-color: $white-color;
 }

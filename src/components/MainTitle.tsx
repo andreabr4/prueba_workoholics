@@ -5,7 +5,7 @@ export default function MainTitle() {
   return (
     <>
       <header className="container-fluid mb-5 mt-5 ps-5 pe-5">
-        <h1 className="title-words title_container">
+        <h1 className="title-words title-container">
           <motion.span
             initial={{ x: -1500 }}
             animate={{ x: 0 }}
