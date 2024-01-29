@@ -9,8 +9,10 @@ body {
 
 .logo {
   @include content-left;
-  margin-top: 4vh;
+  height: 1.1rem;
+  width: auto;
 }
+
 
 .navRow {
   @include total-width;
@@ -20,7 +22,7 @@ body {
   @include content-right;
   width: 100%;
 
-  span {
+  a{
     transition: opacity 0.3s;
     &:hover {
       opacity: 0.6;
@@ -312,4 +314,13 @@ body {
 
 .footer-submit-btn:hover {
   @include btn-transitions-hover;
+}
+
+.navbar-collapse{
+  justify-content: end;
+  display: flex;
+}
+
+.navbar-container{
+  background-color: $white-color;
 }
