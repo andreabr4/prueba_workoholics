@@ -35,9 +35,17 @@
 }
 
 @mixin font-white {
-  color: #fff;
+  color: $white-color;
 }
 
 @mixin color-inherit {
   color: inherit;
+}
+
+@mixin btn-transitions{
+  transition: transform 0.3s;
+}
+
+@mixin btn-transitions-hover{
+  transform: scale(1.05);
 }
