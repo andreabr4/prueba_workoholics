@@ -4,7 +4,8 @@ import Bottle from "../../images/Bottle1.png";
 export default function Items() {
   return (
     <>
-      <section className="container-fluid">
+      <section className="container-fluid ">
+        <div className="no-overflow">
         <article className="row items-container">
           <div className="col-sm-6 tshirt-article d-flex justify-content-end">
             <figure className="tshirt-image">
@@ -107,6 +108,7 @@ export default function Items() {
             </div>
           </div>
         </article>
+        </div>
       </section>
     </>
   );

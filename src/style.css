@@ -12098,7 +12098,6 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 95vw;
   max-width: 100vw;
   overflow: hidden;
 }
@@ -12129,6 +12128,11 @@ body {
   overflow: hidden;
   margin-top: 10vh;
   width: 95vw;
+}
+
+.no-overflow {
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .about-circle {
@@ -12252,6 +12256,11 @@ body {
   z-index: 10;
 }
 
+.footer-content {
+  display: flex;
+  justify-content: left;
+}
+
 .contact-information {
   color: #FFF;
   font-size: 1.3rem;
@@ -12299,11 +12308,17 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background: transparent;
   border: 2px solid #cccccc;
   transition: background-color 0.2s, border-color 0.2s;
+}
+@media (min-width: 992px) {
+  .form-check-privacy {
+    width: 15px;
+    height: 15px;
+  }
 }
 .form-check-privacy:checked {
   background-color: #FB088C;
@@ -12311,6 +12326,12 @@ body {
 
 .form-check-label {
   color: #FFF;
+  font-size: 0.6rem;
+}
+@media (min-width: 992px) {
+  .form-check-label {
+    font-size: 1rem;
+  }
 }
 .form-check-label a:hover {
   color: #FB088C;
@@ -12326,18 +12347,31 @@ body {
   transition: transform 0.3s;
   background: none;
   border: none;
+  font-size: 0.6rem;
 }
 @media (max-width: 767.98px) {
   .footer-submit-btn {
     margin-left: 11vw;
   }
 }
+@media (min-width: 992px) {
+  .footer-submit-btn {
+    margin-left: 7rem;
+    font-size: 1rem;
+  }
+}
 .footer-submit-btn svg {
   transition: transform 0.3s;
-  height: 1rem;
+  height: 0.6rem;
   width: auto;
   margin-left: 1vw;
-  margin-top: 0.5vh;
+}
+@media (min-width: 992px) {
+  .footer-submit-btn svg {
+    height: 1rem;
+    width: auto;
+    margin-top: 0.5vh;
+  }
 }
 
 .white-stroke {
