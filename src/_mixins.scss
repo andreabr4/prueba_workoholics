@@ -49,3 +49,29 @@
 @mixin btn-transitions-hover{
   transform: scale(1.05);
 }
+
+@mixin articles{
+  position:relative;
+}
+
+@mixin images-size{
+  height: 37rem;
+  width: auto;
+}
+
+@mixin items-information{
+  position: absolute;
+  top:10.7rem;
+}
+
+@mixin items-title-size{
+  font-size: 5.5rem;
+}
+
+@mixin items-description-size{
+  font-size: 1.2rem;
+}
+
+@mixin items-options-mt{
+  margin-top: 5vh;
+}
