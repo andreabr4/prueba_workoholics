@@ -4,7 +4,7 @@ import Bottle from "../../images/Bottle1.png";
 export default function Items() {
   return (
     <>
-      <section className="container-fluid">
+      <section className="container-fluid section-container">
         <div className="no-overflow">
         <article className="row items-container">
           <div className="col-sm-6 tshirt-article d-flex justify-content-end">
@@ -60,7 +60,7 @@ export default function Items() {
 
         {/* BOTTLE */}
 
-        <article className="row d-flex bottle-container">
+        <article className="row bottle-container">
           <div className="col-sm-6 bottle-article d-flex justify-content-start">
             <figure className="bottle-image">
               <img src={Bottle}></img>
