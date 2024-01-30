@@ -12286,6 +12286,11 @@ body {
 }
 .buy-button p {
   transition: transform 0.3s;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  --webkit-appearance: none;
+  --moz-appearance: none;
   margin-right: 1rem;
   font-size: 0.9rem;
 }

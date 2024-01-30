@@ -239,6 +239,9 @@ body {
 
   p {
     @include btn-transitions;
+    appearance: none;
+    --webkit-appearance: none;
+    --moz-appearance: none;
     margin-right: 1rem;
     font-size: 0.9rem;
   }
