@@ -3,8 +3,8 @@ import BottleImg from "../../images/Bottle1.png";
 export default function Bottle() {
   return (
     <>
-      <article className="row bottle-container">
-        <div className="col-sm-6 bottle-article d-flex justify-content-start">
+      <article className="row bottle-article">
+        <div className="col-sm-6 bottle-container d-flex justify-content-start">
           <figure className="bottle-image">
             <img src={BottleImg} alt="bottle-image"></img>
           </figure>
