@@ -229,6 +229,7 @@ body {
 }
 
 .buy-button {
+  appearance: none;
   --webkit-appearance: none;
   --moz-appearance: none;
   display: flex;
@@ -238,6 +239,9 @@ body {
 
   p {
     @include btn-transitions;
+    appearance: none;
+    --webkit-appearance: none;
+    --moz-appearance: none;
     margin-right: 1rem;
     font-size: 0.9rem;
   }
@@ -447,7 +451,7 @@ body {
   }
 
   @media (min-width: 992px) {
-    margin-left: 30rem;
+    margin-left: 12rem;
     font-size: 1rem;
   }
 

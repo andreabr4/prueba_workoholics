@@ -21,7 +21,7 @@ export default function Footer() {
                   />
 
                   <div className="row mt-4 privacy-row">
-                    <div className="col-auto form-check">
+                    <div className="col-auto col-sm-7 form-check">
                       <input
                         type="checkbox"
                         className="form-check-privacy"
@@ -38,7 +38,7 @@ export default function Footer() {
                         </a>
                       </label>
                     </div>
-                    <div className="col-auto mb-5 footer-submit-col">
+                    <div className="col-auto col-sm-5 mb-5 footer-submit-col">
                       <button type="submit" className="footer-submit-btn">
                         Submit
                         <svg
@@ -64,7 +64,7 @@ export default function Footer() {
               </div>
             </form>
           </div>
-          <div className="col-md-5 mt-sm-5 order-sm-1 contact-information">
+          <div className="col-md-5 order-sm-1 contact-information">
             <div className="row">
               <a href="mailto:hello@workoholics.es">hello@workoholics.es</a>
             </div>

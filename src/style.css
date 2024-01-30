@@ -12274,6 +12274,9 @@ body {
 }
 
 .buy-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   --webkit-appearance: none;
   --moz-appearance: none;
   display: flex;
@@ -12283,6 +12286,11 @@ body {
 }
 .buy-button p {
   transition: transform 0.3s;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  --webkit-appearance: none;
+  --moz-appearance: none;
   margin-right: 1rem;
   font-size: 0.9rem;
 }
@@ -12298,6 +12306,11 @@ body {
 
 .tshirt-article {
   position: relative;
+}
+@media (max-width: 1445px) {
+  .tshirt-article {
+    margin-left: 7vw;
+  }
 }
 @media (max-width: 575.98px) {
   .tshirt-article {
@@ -12337,6 +12350,11 @@ body {
 
 .bottle-article {
   position: relative;
+}
+@media (max-width: 1445px) {
+  .bottle-article {
+    margin-left: 7vw;
+  }
 }
 @media (max-width: 575.98px) {
   .bottle-article {
@@ -12554,7 +12572,7 @@ body {
 }
 @media (min-width: 992px) {
   .footer-submit-btn {
-    margin-left: 30rem;
+    margin-left: 12rem;
     font-size: 1rem;
   }
 }
