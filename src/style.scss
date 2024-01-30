@@ -13,6 +13,10 @@ body {
   width: auto;
 }
 
+.no-overflow {
+  @include no-horizontal-overflow;
+}
+
 .navRow {
   @include total-width;
 }
@@ -123,11 +127,25 @@ body {
   }
 }
 
+.navbar-collapse {
+  justify-content: end;
+  display: flex;
+}
+
+.navbar-container {
+  background-color: $white-color;
+}
+
 .contact-aside {
   position: fixed;
   right: 0;
   bottom: 5vh;
   z-index: 5;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
   p {
     transform: rotate(90deg);
@@ -158,10 +176,6 @@ body {
   }
 }
 
-.no-overflow {
-  @include no-horizontal-overflow;
-}
-
 .about-circle {
   height: 1rem;
   width: 1rem;
@@ -179,13 +193,13 @@ body {
   }
 }
 
-.section-container {
+.section-items-container {
   @media (max-width: 575.98px) {
     padding-right: 0;
   }
 }
 
-.items-container {
+.tshirt-article {
   margin-top: 15rem;
   @media (max-width: 575.98px) {
     margin-top: 9rem;
@@ -258,8 +272,8 @@ body {
   }
 }
 
-.tshirt-article {
-  @include articles;
+.tshirt-container {
+  @include items-container;
 }
 
 .tshirt-image {
@@ -279,15 +293,15 @@ body {
   stroke: $secondary-color;
 }
 
-.bottle-container {
+.bottle-article {
   @media (min-width: 575.98px) {
     display: flex;
     justify-content: end;
   }
 }
 
-.bottle-article {
-  @include articles;
+.bottle-container {
+  @include items-container;
 }
 
 .bottle-image {
@@ -394,8 +408,8 @@ body {
 }
 
 .form-check-privacy {
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   width: 10px;
   height: 10px;
@@ -451,7 +465,7 @@ body {
   }
 
   @media (min-width: 992px) {
-    margin-left: 30rem;
+    margin-left: 12rem;
     font-size: 1rem;
   }
 
@@ -478,11 +492,3 @@ body {
   @include btn-transitions-hover;
 }
 
-.navbar-collapse {
-  justify-content: end;
-  display: flex;
-}
-
-.navbar-container {
-  background-color: $white-color;
-}

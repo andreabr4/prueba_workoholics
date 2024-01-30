@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function MainTitle() {
   return (
     <>
-      <header className="container-fluid mb-5 mt-5 ps-sm-5 pe-sm-5">
+      <header id="main-title" className="container-fluid mb-5 mt-5 ps-sm-5 pe-sm-5">
         <h1 className="title-words title-container">
           <motion.span
             initial={{ x: -1500 }}
@@ -13,7 +13,7 @@ export default function MainTitle() {
               duration: 2,
               delay: 0.1,
             }}
-            // whileHover={{scale: 0.9}}
+            whileHover={{scale: 0.9}}
             className="first-line-title"
           >
             LOREM
@@ -26,7 +26,7 @@ export default function MainTitle() {
               duration: 2,
               delay: 0.2,
             }}
-            // whileHover={{ opacity: 0.8 }}
+            whileHover={{scale: 0.9}}
             className="second-line-title"
           >
             IPSUM
@@ -39,7 +39,7 @@ export default function MainTitle() {
               duration: 2,
               delay: 0.5,
             }}
-            // whileHover={{ opacity: 0.8 }}
+            whileHover={{scale: 0.9}}
             className="third-line-title"
           >
             DOLOR

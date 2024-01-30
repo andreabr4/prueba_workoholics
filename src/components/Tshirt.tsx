@@ -10,8 +10,8 @@ export default function Tshirt() {
 
   return (
     <>
-      <article className="row items-container">
-        <div className="col-sm-6 tshirt-article d-flex justify-content-end">
+      <article className="row tshirt-article">
+        <div className="col-sm-6 tshirt-container d-flex justify-content-end">
           <figure className="tshirt-image">
             <img src={tshirtImage} alt="t-shirt-image"></img>
           </figure>
