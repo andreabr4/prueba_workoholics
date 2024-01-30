@@ -5,7 +5,7 @@ export default function Items() {
 
   return (
     <>
-      <section className="container-fluid section-container">
+      <section id="items" className="container-fluid section-container">
         <div className="no-overflow">
           <Tshirt />
           <Bottle />

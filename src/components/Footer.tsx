@@ -10,7 +10,7 @@ export default function Footer() {
               <p>We are Worköholics.</p>
             </div>
 
-            <form>
+            <form id="contact">
               <div className="row mb-3">
                 <div className="col">
                   <input

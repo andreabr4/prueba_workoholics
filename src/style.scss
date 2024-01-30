@@ -129,6 +129,10 @@ body {
   bottom: 5vh;
   z-index: 5;
 
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
   p {
     transform: rotate(90deg);
   }

@@ -26,17 +26,17 @@ export default function Contact() {
     return (
       
        <aside id="contact-aside" className="contact-aside d-none d-sm-block">
-        {/* <div className="no-overflow"> */}
         {isVisible 
         &&
         <>
+          <a href="#contact">
             <p>
             <div className="contact-line "></div>
             </p>
             <p>Contact us</p>
+          </a>
         </>
         }
-        {/* </div> */}
        </aside>
     );
 }
