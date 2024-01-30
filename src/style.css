@@ -12131,6 +12131,10 @@ body {
   bottom: 5vh;
   z-index: 5;
 }
+.contact-aside a {
+  text-decoration: none;
+  color: inherit;
+}
 .contact-aside p {
   transform: rotate(90deg);
 }

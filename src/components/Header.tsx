@@ -71,15 +71,15 @@ export default function Header() {
 
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav navbarMenu">
-              <a className="nav-link" aria-current="page" href="#">
+              <a className="nav-link" aria-current="page" href="#main-title">
                 Menu 1
               </a>
 
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#about">
                 Menu 2
               </a>
 
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#items">
                 Menu 3
               </a>
             </div>
