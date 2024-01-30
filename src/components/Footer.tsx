@@ -20,7 +20,7 @@ export default function Footer() {
                     placeholder="E-mail"
                   />
 
-                  <div className="row mt-4">
+                  <div className="row mt-4 privacy-row">
                     <div className="col-auto form-check">
                       <input
                         type="checkbox"
@@ -29,7 +29,7 @@ export default function Footer() {
                         id="privacy"
                       />
                       <label
-                        className="form-check-label ms-3"
+                        className="form-check-label"
                         htmlFor="privacy"
                       >
                         {"I have read and accepted the "}
@@ -38,7 +38,7 @@ export default function Footer() {
                         </a>
                       </label>
                     </div>
-                    <div className="col-auto">
+                    <div className="col-auto mb-5 footer-submit-col">
                       <button type="submit" className="footer-submit-btn">
                         Submit
                         <svg

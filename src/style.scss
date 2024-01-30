@@ -116,6 +116,13 @@ body {
   @include no-horizontal-overflow;
 }
 
+.navbar-toggler {
+  border: none;
+  .navbar-toggler-icon {
+    background-image: none;
+  }
+}
+
 .contact-aside {
   position: fixed;
   right: 0;
@@ -267,11 +274,9 @@ body {
 }
 
 .bottle-container {
-
   @media (min-width: 575.98px) {
     display: flex;
     justify-content: end;
-
   }
 }
 
@@ -280,13 +285,12 @@ body {
 }
 
 .bottle-image {
-  
   img {
     @include images-size;
     margin-left: 13vw;
-    
+
     @media (max-width: 575.98px) {
-    margin-left: 31vw;
+      margin-left: 31vw;
     }
   }
 }
@@ -308,13 +312,12 @@ body {
   @include border-bottom;
   @include items-options;
   @media (max-width: 575.98px) {
-    width:21rem;
+    width: 21rem;
 
-  .col{
-    margin-top: 5vh;
-    margin-right: 69vw;
-   }
-
+    .col {
+      margin-top: 5vh;
+      margin-right: 69vw;
+    }
   }
 }
 
@@ -378,9 +381,15 @@ body {
   }
 }
 
+.privacy-row {
+  @media (max-width: 575.98px) {
+    margin-left: -5.5vw;
+  }
+}
+
 .form-check-privacy {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
   appearance: none;
   width: 10px;
   height: 10px;
@@ -400,10 +409,12 @@ body {
 
 .form-check-label {
   @include font-white;
-  font-size: 0.6rem;
+  font-size: 0.67rem;
+  margin-left: 0.3rem;
 
   @media (min-width: 992px) {
     font-size: 1rem;
+    margin-left: 1rem;
   }
 
   a:hover {
@@ -414,6 +425,12 @@ body {
 
 .privacy-link {
   @include color-inherit;
+}
+
+.footer-submit-col {
+  @media (max-width: 575.98px) {
+    margin-left: -10vw;
+  }
 }
 
 .footer-submit-btn {
@@ -428,7 +445,7 @@ body {
   }
 
   @media (min-width: 992px) {
-    margin-left: 7rem;
+    margin-left: 30rem;
     font-size: 1rem;
   }
 

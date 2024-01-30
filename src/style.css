@@ -12118,6 +12118,13 @@ body {
   overflow: hidden;
 }
 
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+}
+
 .contact-aside {
   position: fixed;
   right: 0;
@@ -12479,10 +12486,16 @@ body {
   box-shadow: none;
 }
 
+@media (max-width: 575.98px) {
+  .privacy-row {
+    margin-left: -5.5vw;
+  }
+}
+
 .form-check-privacy {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 10px;
   height: 10px;
   background: transparent;
@@ -12501,11 +12514,13 @@ body {
 
 .form-check-label {
   color: #FFF;
-  font-size: 0.6rem;
+  font-size: 0.67rem;
+  margin-left: 0.3rem;
 }
 @media (min-width: 992px) {
   .form-check-label {
     font-size: 1rem;
+    margin-left: 1rem;
   }
 }
 .form-check-label a:hover {
@@ -12515,6 +12530,12 @@ body {
 
 .privacy-link {
   color: inherit;
+}
+
+@media (max-width: 575.98px) {
+  .footer-submit-col {
+    margin-left: -10vw;
+  }
 }
 
 .footer-submit-btn {
@@ -12531,7 +12552,7 @@ body {
 }
 @media (min-width: 992px) {
   .footer-submit-btn {
-    margin-left: 7rem;
+    margin-left: 30rem;
     font-size: 1rem;
   }
 }
