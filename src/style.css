@@ -12486,6 +12486,10 @@ body {
   box-shadow: none;
 }
 
+.privacy-row {
+  margin-left: -5.5vw;
+}
+
 .form-check-privacy {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -12508,7 +12512,7 @@ body {
 
 .form-check-label {
   color: #FFF;
-  font-size: 0.6rem;
+  font-size: 0.67rem;
 }
 @media (min-width: 992px) {
   .form-check-label {
@@ -12522,6 +12526,12 @@ body {
 
 .privacy-link {
   color: inherit;
+}
+
+@media (max-width: 575.98px) {
+  .footer-submit-col {
+    margin-left: -10vw;
+  }
 }
 
 .footer-submit-btn {
