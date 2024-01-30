@@ -5,11 +5,9 @@ import SectionHeader from "./SectionHeader";
 export default function SectionItems() {
     
     return (
-        <>
-        <section  className="container-fluid section-about-container">
+        <section className="section-about-container"> 
         <SectionHeader></SectionHeader>
         <Items></Items>
-        </section>
-        </>
+       </section>
     );
 }
