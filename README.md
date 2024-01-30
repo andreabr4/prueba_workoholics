@@ -69,7 +69,7 @@ Primero, se ha optado por usar HTML semántico para crear el esqueleto de la web
 
 En segundo lugar, se ha usado GIT y Github para el control de versiones.
 
-- Para ello se han creado 2 ramas principales (main y dev). La rama main tenía el código público que estaba disponible en Vercel, mientras que la rama dev se estaba usando para juntar los diferentes cambios una vez eran comprobados.Para cada desarrollo, se han ido creando diferentes ramas partiendo desde la rama dev.
+- Para ello, se han creado 2 ramas principales (main y dev). La rama main tenía el código público que estaba disponible en Vercel, mientras que la rama dev se estaba usando para juntar los diferentes cambios una vez eran comprobados. Para cada desarrollo, se han ido creando diferentes ramas partiendo desde la rama dev.
 
 
 La web está montada en React usando TypeScript.
@@ -78,13 +78,13 @@ La web está montada en React usando TypeScript.
 
 - La elección de TypeScript se basa en que es un lenguaje tipado que, en caso de escalar el proyecto, permitiría hacerlo de forma más controlada y con menos posibilidades de error. Además, permite ejecutar componentes creados en JavaScript y migrarlos a TypeScript en un futuro. 
 
-Para dar estílo a la web se ha utilizado Bootstrap y Saas.
+Para dar estilo a la web se ha utilizado Bootstrap y Saas.
 
-- Bootstrap nos facilita el diseño porque ya tiene clases y componentes predetermidos, haciendo que el desarrollo sea más fácil y rápido. Asimismo, se basa en una estructura de malla que permite hacer las páginas web responsive de forma más sencilla.
+- Bootstrap nos facilita el diseño porque ya tiene clases y componentes predeterminados, haciendo que el desarrollo sea más fácil y rápido. Asimismo, se basa en una estructura de malla que permite hacer las páginas web responsive de forma más sencilla.
 
 - Sass ofrece la posibilidad de declarar variables y mixins donde crear y reutilizar estilos propios. Del mismo modo, Sass permite anidar estilos y crear configuraciones personalizadas a los diferentes tamaños de pantalla.
 
-Finalmente, Framer Motion ha dado vida a la web introduciendo animaciones de forma sencilla en el título, que es el componente más llamativo de este sitio web.
+Finalmente, Framer Motion ha dado vida a la web introduciendo animaciones de forma simple en el título, que es el componente más llamativo de este sitio web.
 
 
 
@@ -103,5 +103,5 @@ Finalmente, Framer Motion ha dado vida a la web introduciendo animaciones de for
 
 - [ ] Comprobar funcionamiento en Safari
 - [ ] Añadir más keyframes en lugares clave
-- [ ] Crear un componente Item reutilizable
+- [ ] Crear un componente "Item" reutilizable
 
