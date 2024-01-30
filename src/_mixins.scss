@@ -52,26 +52,72 @@
 
 @mixin articles{
   position:relative;
+  @media (max-width: 575.98px) {
+    margin-left: 17vw;
+  }
 }
 
 @mixin images-size{
   height: 37rem;
   width: auto;
+
+  @media (max-width: 575.98px) {
+    height: 22rem;
+    width: auto;
+  }
 }
 
 @mixin items-information{
   position: absolute;
   top:10.7rem;
+
+  @media (max-width: 575.98px) {
+    top: 5rem;
+    .col-8,
+    .col-7 {
+      margin-left: -13vw;
+    }
+  }
 }
 
 @mixin items-title-size{
   font-size: 5.5rem;
+  @media (max-width: 575.98px) {
+    font-size: 3rem;
+  }
 }
 
 @mixin items-description-size{
   font-size: 1.2rem;
+  @media (max-width: 575.98px) {
+    font-size: 0.8rem;
+  }
 }
 
-@mixin items-options-mt{
+@mixin items-options{
   margin-top: 5vh;
+
+  @media (max-width: 575.98px) {
+    margin-left: -16.5vw;
+    margin-top: 1vh;
+    height: 5rem;
+    width:22rem;
+
+    .col-2 {
+      margin-right: 0.7rem;
+    }
+
+    .col{
+      margin-left: -18vw;
+      margin-top: 3vh;
+    }
+  }
+}
+
+
+@mixin buy-button-col{
+  @media (max-width: 575.98px) {
+    margin-top: 3vh;
+    margin-right: 72vw;
+  }
 }

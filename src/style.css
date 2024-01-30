@@ -12029,12 +12029,46 @@ body {
   z-index: 2;
   align-self: flex-end;
 }
+@media (max-width: 767.98px) {
+  .title-mug {
+    height: 27rem;
+    top: 6.5rem;
+    justify-content: end;
+    display: flex;
+    overflow-x: visible;
+    right: -15%;
+  }
+}
+@media (max-width: 575.98px) {
+  .title-mug {
+    height: 19rem;
+    top: 6.5rem;
+    justify-content: end;
+    display: flex;
+    overflow-x: visible;
+    right: -22%;
+  }
+}
 
 .title-words {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   color: #212222;
   font-size: 15rem;
+}
+@media (max-width: 767.98px) {
+  .title-words {
+    font-size: 13rem;
+    top: 3rem;
+    overflow-x: visible;
+  }
+}
+@media (max-width: 575.98px) {
+  .title-words {
+    font-size: 9rem;
+    top: 3rem;
+    overflow-x: visible;
+  }
 }
 
 .first-line-title {
@@ -12043,11 +12077,24 @@ body {
   text-align: left;
   padding-left: 5vw;
 }
+@media (max-width: 991.98px) {
+  .first-line-title {
+    transform: translateX(20%);
+  }
+}
 
 .second-line-title {
   z-index: 3;
   text-align: right;
   padding-right: 10vw;
+}
+@media (max-width: 991.98px) {
+  .second-line-title {
+    transform: translateX(-20%);
+    position: relative;
+    left: -35%;
+    overflow-x: visible;
+  }
 }
 
 .third-line-title {
@@ -12056,11 +12103,17 @@ body {
   border-top: 0.1vh solid #212222;
   padding-left: 6vw;
 }
+@media (max-width: 991.98px) {
+  .third-line-title {
+    transform: translateX(20%);
+  }
+}
 
 .title-container {
   display: flex;
   position: relative;
   flex-direction: column;
+  width: 95vw;
   max-width: 100vw;
   overflow: hidden;
 }
@@ -12092,6 +12145,13 @@ body {
   margin-top: 10vh;
   width: 95vw;
 }
+@media (max-width: 575.98px) {
+  .section-about-container {
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
 
 .no-overflow {
   max-width: 100vw;
@@ -12110,14 +12170,40 @@ body {
 .about-paragraph {
   font-size: 1.7rem;
 }
+@media (max-width: 575.98px) {
+  .about-paragraph {
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-container {
+    padding-right: 0;
+  }
+}
 
 .items-container {
   margin-top: 15rem;
+}
+@media (max-width: 575.98px) {
+  .items-container {
+    margin-top: 9rem;
+    margin-bottom: 15vh;
+  }
 }
 
 .tshirt-information {
   position: absolute;
   top: 10.7rem;
+}
+@media (max-width: 575.98px) {
+  .tshirt-information {
+    top: 5rem;
+  }
+  .tshirt-information .col-8,
+  .tshirt-information .col-7 {
+    margin-left: -13vw;
+  }
 }
 
 .tshirt-title {
@@ -12125,14 +12211,39 @@ body {
   font-weight: 700;
   font-size: 5.5rem;
 }
+@media (max-width: 575.98px) {
+  .tshirt-title {
+    font-size: 3rem;
+  }
+}
 
 .tshirt-description {
   font-size: 1.2rem;
+}
+@media (max-width: 575.98px) {
+  .tshirt-description {
+    font-size: 0.8rem;
+  }
 }
 
 .tshirt-options {
   border-bottom: 0.1vh solid #212222;
   margin-top: 5vh;
+}
+@media (max-width: 575.98px) {
+  .tshirt-options {
+    margin-left: -16.5vw;
+    margin-top: 1vh;
+    height: 5rem;
+    width: 22rem;
+  }
+  .tshirt-options .col-2 {
+    margin-right: 0.7rem;
+  }
+  .tshirt-options .col {
+    margin-left: -18vw;
+    margin-top: 3vh;
+  }
 }
 
 .secondary-color-rectangle {
@@ -12148,6 +12259,13 @@ body {
   background-color: #FB088C;
 }
 
+@media (max-width: 575.98px) {
+  .buy-button-col {
+    margin-top: 3vh;
+    margin-right: 72vw;
+  }
+}
+
 .buy-button {
   display: flex;
   align-items: center;
@@ -12157,10 +12275,11 @@ body {
 .buy-button p {
   transition: transform 0.3s;
   margin-right: 1rem;
+  font-size: 0.9rem;
 }
 .buy-button svg {
   transition: transform 0.3s;
-  height: 1em;
+  height: 0.9em;
   width: auto;
   margin-top: -1rem;
 }
@@ -12171,6 +12290,11 @@ body {
 .tshirt-article {
   position: relative;
 }
+@media (max-width: 575.98px) {
+  .tshirt-article {
+    margin-left: 17vw;
+  }
+}
 
 .tshirt-image img {
   height: 37rem;
@@ -12179,24 +12303,67 @@ body {
   transform: matrix(-0.99, -0.15, -0.15, 0.99, 0, 0);
   padding-right: -2rem;
 }
+@media (max-width: 575.98px) {
+  .tshirt-image img {
+    height: 22rem;
+    width: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .tshirt-image img {
+    transform: matrix(-0.99, -0.18, -0.18, 0.99, 0, 0);
+  }
+}
 
 .black-stroke {
   stroke: #212222;
 }
 
+@media (min-width: 575.98px) {
+  .bottle-container {
+    display: flex;
+    justify-content: end;
+  }
+}
+
 .bottle-article {
   position: relative;
+}
+@media (max-width: 575.98px) {
+  .bottle-article {
+    margin-left: 17vw;
+  }
 }
 
 .bottle-image img {
   height: 37rem;
   width: auto;
-  padding-left: 15.7rem;
+  margin-left: 13vw;
+}
+@media (max-width: 575.98px) {
+  .bottle-image img {
+    height: 22rem;
+    width: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .bottle-image img {
+    margin-left: 31vw;
+  }
 }
 
 .bottle-information {
   position: absolute;
   top: 10.7rem;
+}
+@media (max-width: 575.98px) {
+  .bottle-information {
+    top: 5rem;
+  }
+  .bottle-information .col-8,
+  .bottle-information .col-7 {
+    margin-left: -13vw;
+  }
 }
 
 .bottle-title {
@@ -12204,19 +12371,54 @@ body {
   font-weight: 700;
   font-size: 5.5rem;
 }
+@media (max-width: 575.98px) {
+  .bottle-title {
+    font-size: 3rem;
+  }
+}
 
 .bottle-description {
   font-size: 1.2rem;
+}
+@media (max-width: 575.98px) {
+  .bottle-description {
+    font-size: 0.8rem;
+  }
 }
 
 .bottle-options {
   border-bottom: 0.1vh solid #212222;
   margin-top: 5vh;
 }
+@media (max-width: 575.98px) {
+  .bottle-options {
+    margin-left: -16.5vw;
+    margin-top: 1vh;
+    height: 5rem;
+    width: 22rem;
+  }
+  .bottle-options .col-2 {
+    margin-right: 0.7rem;
+  }
+  .bottle-options .col {
+    margin-left: -18vw;
+    margin-top: 3vh;
+  }
+}
+@media (max-width: 575.98px) {
+  .bottle-options {
+    width: 21rem;
+  }
+  .bottle-options .col {
+    margin-top: 5vh;
+    margin-right: 69vw;
+  }
+}
 
 .footer-container {
   background-color: #212222;
   z-index: 10;
+  margin-top: 11vh;
 }
 
 .footer-content {
@@ -12228,6 +12430,11 @@ body {
   color: #FFF;
   font-size: 1.3rem;
   padding-left: 3vw;
+}
+@media (max-width: 767.98px) {
+  .contact-information {
+    font-size: 0.9rem;
+  }
 }
 .contact-information a {
   color: inherit;
@@ -12241,6 +12448,11 @@ body {
   line-height: 1.3rem;
   font-size: 1.5rem;
   margin-bottom: 7vh;
+}
+@media (max-width: 767.98px) {
+  .footer-slogan {
+    margin-bottom: 5vh;
+  }
 }
 
 .footer-form {
@@ -12310,7 +12522,12 @@ body {
   transition: transform 0.3s;
   background: none;
   border: none;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
+}
+@media (max-width: 767.98px) {
+  .footer-submit-btn {
+    margin-left: 11vw;
+  }
 }
 @media (min-width: 992px) {
   .footer-submit-btn {
