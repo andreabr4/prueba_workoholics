@@ -4,13 +4,15 @@ import Bottle from "../../images/Bottle1.png";
 export default function Items() {
   return (
     <>
-      <section className="container-fluid ">
+      <section className="container-fluid">
         <div className="no-overflow">
         <article className="row items-container">
           <div className="col-sm-6 tshirt-article d-flex justify-content-end">
+         
             <figure className="tshirt-image">
               <img src={Tshirt}></img>
             </figure>
+          
 
             <div className="tshirt-information">
               <div className="row">
@@ -28,8 +30,8 @@ export default function Items() {
               <div className="container">
                 <section className="tshirt-options pb-3 row">
                   <span className="secondary-color-rectangle col-2 mt-1" />
-                  <span className="primary-color-rectangle col-2 mt-1" />
-                  <div className="col d-flex justify-content-end">
+                  <span className="primary-color-rectangle col-2 mt-1"/>
+                  <div className="col order-sm-3 d-flex justify-content-end buy-button-col">
                     <button className="buy-button">
                       <p>Buy</p>
                       <svg
@@ -58,7 +60,7 @@ export default function Items() {
 
         {/* BOTTLE */}
 
-        <article className="row d-flex justify-content-end">
+        <article className="row d-flex bottle-container">
           <div className="col-sm-6 bottle-article d-flex justify-content-start">
             <figure className="bottle-image">
               <img src={Bottle}></img>
@@ -82,7 +84,7 @@ export default function Items() {
               <div className="container">
                 <section className="bottle-options pb-3 row">
                   <span className="primary-color-rectangle col-2 mt-1" />
-                  <div className="col d-flex justify-content-end">
+                  <div className="col order-sm-3 d-flex justify-content-end buy-button-col">
                     <button className="buy-button">
                       <p>Buy</p>
                       <svg

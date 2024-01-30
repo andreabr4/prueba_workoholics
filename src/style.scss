@@ -38,7 +38,7 @@ body {
   z-index: 2;
   align-self: flex-end;
 
-  @media (max-width: 767.98px) { 
+  @media (max-width: 767.98px) {
     height: 27rem;
     top: 6.5rem;
     justify-content: end;
@@ -62,12 +62,12 @@ body {
   @include font-color;
   font-size: 15rem;
 
-  @media (max-width: 767.98px) { 
-    font-size:13rem;
+  @media (max-width: 767.98px) {
+    font-size: 13rem;
     top: 3rem;
     overflow-x: visible;
   }
-  @media (max-width: 575.98px) { 
+  @media (max-width: 575.98px) {
     font-size: 9rem;
     top: 3rem;
     overflow-x: visible;
@@ -81,7 +81,7 @@ body {
   padding-left: 5vw;
 
   @media (max-width: 991.98px) {
-    transform: translateX(20%); 
+    transform: translateX(20%);
   }
 }
 
@@ -91,7 +91,7 @@ body {
   padding-right: 10vw;
 
   @media (max-width: 991.98px) {
-    transform: translateX(-20%); 
+    transform: translateX(-20%);
     position: relative;
     left: -35%;
     overflow-x: visible;
@@ -104,7 +104,7 @@ body {
   border-top: 0.1vh solid $secondary-color;
   padding-left: 6vw;
   @media (max-width: 991.98px) {
-    transform: translateX(20%); 
+    transform: translateX(20%);
   }
 }
 
@@ -143,6 +143,12 @@ body {
   @include no-horizontal-overflow;
   margin-top: 10vh;
   width: 95vw;
+
+  @media (max-width: 575.98px) {
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+  }
 }
 
 .no-overflow {
@@ -161,14 +167,18 @@ body {
 .about-paragraph {
   font-size: 1.7rem;
 
-  @media (max-width: 575.98px) { 
+  @media (max-width: 575.98px) {
     margin-top: 10vh;
   }
 }
 
 .items-container {
   margin-top: 15rem;
+  @media (max-width: 575.98px) {
+    margin-top: 9rem;
+  }
 }
+
 .tshirt-information {
   @include items-information;
 }
@@ -184,7 +194,7 @@ body {
 
 .tshirt-options {
   @include border-bottom;
-  @include items-options-mt;
+  @include items-options;
 }
 
 .secondary-color-rectangle {
@@ -200,6 +210,10 @@ body {
   background-color: $primary-color;
 }
 
+.buy-button-col {
+  @include buy-button-col;
+}
+
 .buy-button {
   display: flex;
   align-items: center;
@@ -209,11 +223,12 @@ body {
   p {
     @include btn-transitions;
     margin-right: 1rem;
+    font-size: 0.9rem;
   }
 
   svg {
     @include btn-transitions;
-    height: 1em;
+    height: 0.9em;
     width: auto;
     margin-top: -1rem;
   }
@@ -233,11 +248,22 @@ body {
     transform: scaleX(-1);
     transform: matrix(-0.99, -0.15, -0.15, 0.99, 0, 0);
     padding-right: -2rem;
+
+    @media (max-width: 575.98px) {
+      transform: matrix(-0.99, -0.18, -0.18, 0.99, 0, 0);
+    }
   }
 }
 
 .black-stroke {
   stroke: $secondary-color;
+}
+
+.bottle-container {
+  @media (min-width: 575.98px) {
+    display: flex;
+    justify-content: end;
+  }
 }
 
 .bottle-article {
@@ -247,7 +273,6 @@ body {
 .bottle-image {
   img {
     @include images-size;
-    padding-left: 15.7rem;
   }
 }
 
@@ -266,7 +291,7 @@ body {
 
 .bottle-options {
   @include border-bottom;
-  @include items-options-mt;
+  @include items-options;
 }
 
 .footer-container {
@@ -376,8 +401,6 @@ body {
   @media (max-width: 767.98px) {
     margin-left: 11vw;
   }
-
-  
 
   @media (min-width: 992px) {
     margin-left: 7rem;
