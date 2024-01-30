@@ -265,6 +265,10 @@ body {
   font-size: 1.3rem;
   padding-left: 3vw;
 
+  @media (max-width: 767.98px) {
+    font-size: 0.9rem;
+  }
+
   a {
     @include color-inherit;
     text-decoration: none;
@@ -277,6 +281,10 @@ body {
   line-height: 1.3rem;
   font-size: 1.5rem;
   margin-bottom: 7vh;
+
+  @media (max-width: 767.98px) {
+    margin-bottom: 5vh;
+  }
 }
 
 .footer-form {
@@ -344,7 +352,7 @@ body {
   @include btn-transitions;
   background: none;
   border: none;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 
   @media (max-width: 767.98px) {
     margin-left: 11vw;
