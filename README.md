@@ -32,7 +32,7 @@ Prueba técnica Worköholics
 - [**Typescript**](https://www.typescriptlang.org/) - JavaScript con sintaxis y tipado
 - [**Bootstrap**](https://getbootstrap.com/) - Herramienta de front-end para diseño de sitios y aplicaciones web
 - [**Sass**](https://sass-lang.com/) - Sass es un lenguaje de extensión de CSS
-- [**Framer-motion**](hhttps://www.framer.com/motion/) - Biblioteca de animaciones de Framer para React
+- [**Framer-motion**](https://www.framer.com/motion/) - Biblioteca de animaciones de Framer para React
 
 ## 🚀 Primeros pasos
 
