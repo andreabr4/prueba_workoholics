@@ -52,6 +52,10 @@
 
 @mixin articles{
   position:relative;
+  
+  @media (max-width: 1445px) {
+    margin-left: 7vw;
+  }
   @media (max-width: 575.98px) {
     margin-left: 17vw;
   }

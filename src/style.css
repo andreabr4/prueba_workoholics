@@ -12307,6 +12307,11 @@ body {
 .tshirt-article {
   position: relative;
 }
+@media (max-width: 1445px) {
+  .tshirt-article {
+    margin-left: 7vw;
+  }
+}
 @media (max-width: 575.98px) {
   .tshirt-article {
     margin-left: 17vw;
@@ -12345,6 +12350,11 @@ body {
 
 .bottle-article {
   position: relative;
+}
+@media (max-width: 1445px) {
+  .bottle-article {
+    margin-left: 7vw;
+  }
 }
 @media (max-width: 575.98px) {
   .bottle-article {
@@ -12562,7 +12572,7 @@ body {
 }
 @media (min-width: 992px) {
   .footer-submit-btn {
-    margin-left: 30rem;
+    margin-left: 12rem;
     font-size: 1rem;
   }
 }
