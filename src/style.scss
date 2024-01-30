@@ -37,12 +37,41 @@ body {
   width: auto;
   z-index: 2;
   align-self: flex-end;
+
+  @media (max-width: 767.98px) { 
+    height: 27rem;
+    top: 6.5rem;
+    justify-content: end;
+    display: flex;
+    overflow-x: visible;
+    right: -15%;
+  }
+
+  @media (max-width: 575.98px) {
+    height: 19rem;
+    top: 6.5rem;
+    justify-content: end;
+    display: flex;
+    overflow-x: visible;
+    right: -22%;
+  }
 }
 
 .title-words {
   @include bold-font;
   @include font-color;
   font-size: 15rem;
+
+  @media (max-width: 767.98px) { 
+    font-size:13rem;
+    top: 3rem;
+    overflow-x: visible;
+  }
+  @media (max-width: 575.98px) { 
+    font-size: 9rem;
+    top: 3rem;
+    overflow-x: visible;
+  }
 }
 
 .first-line-title {
@@ -50,12 +79,23 @@ body {
   z-index: 1;
   text-align: left;
   padding-left: 5vw;
+
+  @media (max-width: 991.98px) {
+    transform: translateX(20%); 
+  }
 }
 
 .second-line-title {
   z-index: 3;
   text-align: right;
   padding-right: 10vw;
+
+  @media (max-width: 991.98px) {
+    transform: translateX(-20%); 
+    position: relative;
+    left: -35%;
+    overflow-x: visible;
+  }
 }
 
 .third-line-title {
@@ -63,13 +103,16 @@ body {
   z-index: 1;
   border-top: 0.1vh solid $secondary-color;
   padding-left: 6vw;
+  @media (max-width: 991.98px) {
+    transform: translateX(20%); 
+  }
 }
 
 .title-container {
   display: flex;
   position: relative;
   flex-direction: column;
-  // width: 95vw;
+  width: 95vw;
   @include no-horizontal-overflow;
 }
 
@@ -117,6 +160,10 @@ body {
 
 .about-paragraph {
   font-size: 1.7rem;
+
+  @media (max-width: 575.98px) { 
+    margin-top: 10vh;
+  }
 }
 
 .items-container {
@@ -325,6 +372,12 @@ body {
   background: none;
   border: none;
   font-size: 0.7rem;
+
+  @media (max-width: 767.98px) {
+    margin-left: 11vw;
+  }
+
+  
 
   @media (min-width: 992px) {
     margin-left: 7rem;
