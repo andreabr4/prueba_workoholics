@@ -12274,6 +12274,9 @@ body {
 }
 
 .buy-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   --webkit-appearance: none;
   --moz-appearance: none;
   display: flex;
