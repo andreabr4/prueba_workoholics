@@ -1,7 +1,7 @@
 export default function SectionHeader() {
   return (
     <>
-      <header>
+      <header className="container-fluid">
         <div className="row-12">
           <div className="col-md-6 offset-md-5">
             <p className="about-paragraph">
