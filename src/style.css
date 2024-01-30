@@ -12176,12 +12176,19 @@ body {
   }
 }
 
+@media (max-width: 575.98px) {
+  .section-container {
+    padding-right: 0;
+  }
+}
+
 .items-container {
   margin-top: 15rem;
 }
 @media (max-width: 575.98px) {
   .items-container {
     margin-top: 9rem;
+    margin-bottom: 15vh;
   }
 }
 
@@ -12228,6 +12235,7 @@ body {
     margin-left: -16.5vw;
     margin-top: 1vh;
     height: 5rem;
+    width: 22rem;
   }
   .tshirt-options .col-2 {
     margin-right: 0.7rem;
@@ -12254,7 +12262,7 @@ body {
 @media (max-width: 575.98px) {
   .buy-button-col {
     margin-top: 3vh;
-    margin-right: 77vw;
+    margin-right: 72vw;
   }
 }
 
@@ -12330,11 +12338,17 @@ body {
 .bottle-image img {
   height: 37rem;
   width: auto;
+  margin-left: 13vw;
 }
 @media (max-width: 575.98px) {
   .bottle-image img {
     height: 22rem;
     width: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .bottle-image img {
+    margin-left: 31vw;
   }
 }
 
@@ -12381,6 +12395,7 @@ body {
     margin-left: -16.5vw;
     margin-top: 1vh;
     height: 5rem;
+    width: 22rem;
   }
   .bottle-options .col-2 {
     margin-right: 0.7rem;
@@ -12390,10 +12405,20 @@ body {
     margin-top: 3vh;
   }
 }
+@media (max-width: 575.98px) {
+  .bottle-options {
+    width: 21rem;
+  }
+  .bottle-options .col {
+    margin-top: 5vh;
+    margin-right: 69vw;
+  }
+}
 
 .footer-container {
   background-color: #212222;
   z-index: 10;
+  margin-top: 11vh;
 }
 
 .footer-content {

@@ -97,11 +97,11 @@
 @mixin items-options{
   margin-top: 5vh;
 
-  
   @media (max-width: 575.98px) {
     margin-left: -16.5vw;
     margin-top: 1vh;
     height: 5rem;
+    width:22rem;
 
     .col-2 {
       margin-right: 0.7rem;
@@ -118,6 +118,6 @@
 @mixin buy-button-col{
   @media (max-width: 575.98px) {
     margin-top: 3vh;
-    margin-right: 77vw;
+    margin-right: 72vw;
   }
 }
