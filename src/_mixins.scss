@@ -42,17 +42,17 @@
   color: inherit;
 }
 
-@mixin btn-transitions{
+@mixin btn-transitions {
   transition: transform 0.3s;
 }
 
-@mixin btn-transitions-hover{
+@mixin btn-transitions-hover {
   transform: scale(1.05);
 }
 
-@mixin articles{
-  position:relative;
-  
+@mixin items-container {
+  position: relative;
+
   @media (max-width: 1445px) {
     margin-left: 7vw;
   }
@@ -61,7 +61,7 @@
   }
 }
 
-@mixin images-size{
+@mixin images-size {
   height: 37rem;
   width: auto;
 
@@ -71,9 +71,9 @@
   }
 }
 
-@mixin items-information{
+@mixin items-information {
   position: absolute;
-  top:10.7rem;
+  top: 10.7rem;
 
   @media (max-width: 575.98px) {
     top: 5rem;
@@ -84,42 +84,41 @@
   }
 }
 
-@mixin items-title-size{
+@mixin items-title-size {
   font-size: 5.5rem;
   @media (max-width: 575.98px) {
     font-size: 3rem;
   }
 }
 
-@mixin items-description-size{
+@mixin items-description-size {
   font-size: 1.2rem;
   @media (max-width: 575.98px) {
     font-size: 0.8rem;
   }
 }
 
-@mixin items-options{
+@mixin items-options {
   margin-top: 5vh;
 
   @media (max-width: 575.98px) {
     margin-left: -16.5vw;
     margin-top: 1vh;
     height: 5rem;
-    width:22rem;
+    width: 22rem;
 
     .col-2 {
       margin-right: 0.7rem;
     }
 
-    .col{
+    .col {
       margin-left: -18vw;
       margin-top: 3vh;
     }
   }
 }
 
-
-@mixin buy-button-col{
+@mixin buy-button-col {
   @media (max-width: 575.98px) {
     margin-top: 3vh;
     margin-right: 72vw;
