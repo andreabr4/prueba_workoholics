@@ -29,7 +29,7 @@ export default function Footer() {
                         id="privacy"
                       />
                       <label
-                        className="form-check-label ms-1"
+                        className="form-check-label"
                         htmlFor="privacy"
                       >
                         {"I have read and accepted the "}

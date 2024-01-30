@@ -380,8 +380,11 @@ body {
     box-shadow: none;
   }
 }
+
 .privacy-row {
-  margin-left: -5.5vw;
+  @media (max-width: 575.98px) {
+    margin-left: -5.5vw;
+  }
 }
 
 .form-check-privacy {
@@ -407,9 +410,11 @@ body {
 .form-check-label {
   @include font-white;
   font-size: 0.67rem;
+  margin-left: 0.3rem;
 
   @media (min-width: 992px) {
     font-size: 1rem;
+    margin-left: 1rem;
   }
 
   a:hover {
@@ -440,7 +445,7 @@ body {
   }
 
   @media (min-width: 992px) {
-    margin-left: 7rem;
+    margin-left: 30rem;
     font-size: 1rem;
   }
 

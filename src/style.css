@@ -12486,8 +12486,10 @@ body {
   box-shadow: none;
 }
 
-.privacy-row {
-  margin-left: -5.5vw;
+@media (max-width: 575.98px) {
+  .privacy-row {
+    margin-left: -5.5vw;
+  }
 }
 
 .form-check-privacy {
@@ -12513,10 +12515,12 @@ body {
 .form-check-label {
   color: #FFF;
   font-size: 0.67rem;
+  margin-left: 0.3rem;
 }
 @media (min-width: 992px) {
   .form-check-label {
     font-size: 1rem;
+    margin-left: 1rem;
   }
 }
 .form-check-label a:hover {
@@ -12548,7 +12552,7 @@ body {
 }
 @media (min-width: 992px) {
   .footer-submit-btn {
-    margin-left: 7rem;
+    margin-left: 30rem;
     font-size: 1rem;
   }
 }
