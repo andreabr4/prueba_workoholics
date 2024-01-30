@@ -116,6 +116,15 @@ body {
   @include no-horizontal-overflow;
 }
 
+.navbar-toggler {
+  border: none;
+  .navbar-toggler-icon {
+    background-image: none;
+
+    
+  }
+}
+
 .contact-aside {
   position: fixed;
   right: 0;
