@@ -38,22 +38,22 @@ body {
   z-index: 2;
   align-self: flex-end;
 
-  @media (max-width: 1199.98px) {
-    // for large screens
-    height: 35rem;
+  @media (max-width: 767.98px) { 
+    height: 27rem;
+    top: 6.5rem;
+    justify-content: end;
+    display: flex;
+    overflow-x: visible;
+    right: -15%;
   }
-  @media (max-width: 991.98px) {
-    // for medium screens
-    height: 30rem;
-  }
-  @media (max-width: 767.98px) {
-    // for small screens
-    height: 25rem;
-  }
+
   @media (max-width: 575.98px) {
-    // for extra small screens
-    height: 20rem;
-    top: 3rem;
+    height: 19rem;
+    top: 6.5rem;
+    justify-content: end;
+    display: flex;
+    overflow-x: visible;
+    right: -22%;
   }
 }
 
@@ -61,15 +61,16 @@ body {
   @include bold-font;
   @include font-color;
   font-size: 15rem;
-  @media (max-width: 991.98px) { // for medium screens
-    font-size: 14rem;
-  }
-  @media (max-width: 767.98px) { // for small screens
-    font-size: 9rem;
-  }
-  @media (max-width: 575.98px) { // for extra small screens
-    font-size: 4rem;
+
+  @media (max-width: 767.98px) { 
+    font-size:13rem;
     top: 3rem;
+    overflow-x: visible;
+  }
+  @media (max-width: 575.98px) { 
+    font-size: 9rem;
+    top: 3rem;
+    overflow-x: visible;
   }
 }
 
@@ -78,12 +79,23 @@ body {
   z-index: 1;
   text-align: left;
   padding-left: 5vw;
+
+  @media (max-width: 991.98px) {
+    transform: translateX(20%); 
+  }
 }
 
 .second-line-title {
   z-index: 3;
   text-align: right;
   padding-right: 10vw;
+
+  @media (max-width: 991.98px) {
+    transform: translateX(-20%); 
+    position: relative;
+    left: -35%;
+    overflow-x: visible;
+  }
 }
 
 .third-line-title {
@@ -91,13 +103,16 @@ body {
   z-index: 1;
   border-top: 0.1vh solid $secondary-color;
   padding-left: 6vw;
+  @media (max-width: 991.98px) {
+    transform: translateX(20%); 
+  }
 }
 
 .title-container {
   display: flex;
   position: relative;
   flex-direction: column;
-  // width: 95vw;
+  width: 95vw;
   @include no-horizontal-overflow;
 }
 
@@ -145,6 +160,10 @@ body {
 
 .about-paragraph {
   font-size: 1.7rem;
+
+  @media (max-width: 575.98px) { 
+    margin-top: 10vh;
+  }
 }
 
 .items-container {
