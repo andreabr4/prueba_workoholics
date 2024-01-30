@@ -12118,6 +12118,13 @@ body {
   overflow: hidden;
 }
 
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+}
+
 .contact-aside {
   position: fixed;
   right: 0;
